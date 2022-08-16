@@ -1,10 +1,15 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import React from "react";
 
 function About() {
   return (
     <div className="max-w-5xl mx-auto md:mt-24 mt-32 mb-7 md:grid md:grid-cols-2 flex flex-col justify-center items-center ">
-      <div className="-mt-16">
+      <motion.div
+        animate={{ x: [-10, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="-mt-16"
+      >
         <img
           src="/images/mukhtar.jpg"
           alt="mukhtar"
@@ -16,9 +21,13 @@ function About() {
         <h2 className="text-lg md:text-2xl text-center md:text-justify font-light ">
           Full-Stack Web Developer
         </h2>
-      </div>
-      <div className="mt-8">
-        <div className="text-center md:text-justify text-xl" >
+      </motion.div>
+      <motion.div
+        animate={{ x: [10, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5}}
+        className="mt-8"
+      >
+        <div className="text-center md:text-justify text-xl">
           <p className="py-3 text-gray-700 dark:text-neutral-200 break-words">
             I am passionate web developer who is flexible and disciplined, I am
             a strong team player, I can adapt to new technologies and
@@ -32,8 +41,8 @@ function About() {
           </p>
 
           <p className="py-3 text-gray-700 dark:text-neutral-200 break-words">
-            I made projects with various technologies and tools but I mainly work with
-            Reactjs using Nextjs, and Nodejs for my backend.
+            I made projects with various technologies and tools but I mainly
+            work with Reactjs using Nextjs, and Nodejs for my backend.
           </p>
         </div>
 
@@ -50,7 +59,7 @@ function About() {
             <Tag name={"MongoDB"} color="bg-green-500" />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
