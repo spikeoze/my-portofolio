@@ -6,8 +6,7 @@ import { TbMenu2 } from "react-icons/tb";
 import Menu from "./Menu";
 import { useRouter } from "next/router";
 
-function Nav({ darkTheme, setDarkTheme }) {
-  const [openMenu, setOpenMenu] = useState(false);
+function Nav({ darkTheme, setDarkTheme, openMenu, setOpenMenu }) {
   const { events } = useRouter();
 
   useEffect(() => {
@@ -15,12 +14,12 @@ function Nav({ darkTheme, setDarkTheme }) {
       setOpenMenu(false);
     };
     events.on("routeChangeStart", close);
-
+console.log("test");
     return () => {
       // unsubscribe to event on unmount to prevent memory leak
       events.off("routeChangeStart", close);
     };
-  }, [events]);
+  }, [events, setOpenMenu]);
 
   return (
     <div>

@@ -3,7 +3,11 @@ import React from "react";
 
 function Menu() {
   return (
-    <div className="absolute top-20 p-2 bg-white dark:bg-gray-800 left-11 w-64 h-auto z-50 border border-gray-300 dark:border-black  rounded-lg shadow-xl flex flex-col justify-center items-center ">
+    <div
+      className="absolute top-20 p-2 bg-white dark:bg-gray-800 left-11 w-64 h-auto 
+    border border-gray-300 dark:border-black  rounded-lg shadow-xl flex flex-col justify-center items-center"
+      id="MENU"
+    >
       <NavLink link={""} name="home" color={""} />
       <NavLink link={"projects"} name="projects" color={"text-pink-500"} />
       <NavLink link={"about"} name="about" color={"text-blue-500"} />
