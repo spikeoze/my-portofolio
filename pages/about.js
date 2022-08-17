@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
@@ -24,7 +25,7 @@ function About() {
       </motion.div>
       <motion.div
         animate={{ x: [10, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5}}
+        transition={{ duration: 0.5 }}
         className="mt-8"
       >
         <div className="text-center md:text-justify text-xl">

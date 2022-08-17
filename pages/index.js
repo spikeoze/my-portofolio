@@ -17,7 +17,7 @@ export default function Home() {
       <div className="flex flex-col items-start  space-y-4">
         <p className="text-5xl font-semibold">Hi, I am Mukhtar Amin</p>
         <p className="text-3xl font-light">Full-Stack Web Developer</p>
-        <p className="text-lg font-extralight">
+        <p className="text-lg font-light">
           <motion.span
             animate={{opacity: [0, 1] }}
             transition={{

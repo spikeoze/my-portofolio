@@ -1,9 +1,18 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
+
 import React from "react";
 
 function Contact() {
   return (
-    <div className="max-w-5xl mx-auto mt-48 md:mt-32 flex flex-col space-y-4">
+    <motion.div
+      animate={{ x: [-10, 0], opacity: [0, 1] }}
+      transition={{
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
+      className="max-w-5xl mx-auto mt-48 md:mt-32 flex flex-col space-y-4"
+    >
       <p className="text-2xl lg:text-4xl font-semibold">
         Do you like what you see?, do you have a project in mind?
       </p>
@@ -17,12 +26,16 @@ function Contact() {
         </p>
         <p className="text-lg font-light">
           Twitter:{" "}
-          <a href="https://twitter.com/mukhtxxr" target="_blank" rel="noreferrer">
+          <a
+            href="https://twitter.com/mukhtxxr"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span className="text-blue-400 cursor-pointer ">@mukhtxxr</span>
           </a>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
