@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import React from "react";
 
 function Card({ img, title, description, tools, site, source }) {
-  console.log(tools);
   return (
     <div className="group w-full flex flex-col justify-evenly  bg-white rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-800 border-gray-200 border mx-auto">
       <Image
