@@ -4,7 +4,7 @@ export const projects = [
     title: "my blog",
     description:
       "a modern looking blog site with responsive layout and eye catching design, inspired by Medium",
-    img: "/images/blog.png",
+    img: "/images/myblog.png",
     site: "https://myfuckingblog.vercel.app/",
     source: "https://github.com/spikeoze/blog_app",
     tools: [
